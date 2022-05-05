@@ -190,7 +190,7 @@ p {
             "instrumento-cuatro instrumento-cinco"
             "instrumento-seis instrumento-siete"
             "instrumento-tres";
-    }
+    }  }
     .instrumento-uno {
         grid-area: instrumento-uno;
         background-color: white;
