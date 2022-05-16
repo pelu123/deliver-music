@@ -1,226 +1,87 @@
 * {
-    padding: 0px;
-    margin: 0px;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: antiquewhite;
+    font-family: 'Koulen', cursive
+}
+/*estilo general del sitio marcado la clase "contenedor"*/
+.contenedor {
+    padding: 20px;
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+/*estilo de header que se respetara en todas las paginas del sitio*/
+.header {
+    width: 100%;
+    height: 150px;
+    color: black;
+    text-align: center;
+    background-color: grey;
 }
 
-.header {
+.header-titulo {
     text-align: center;
-    color: chocolate;
-    background-color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
 }
 
 nav {
+    text-align: center;
+}
+
+nav>a {
+    color: #000;
+    font-weight: 300;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+/*comenzo de aplicacion de estilos a los diferentes sections del index*/
+.imagen-principal{
+    width: 100%;
+    text-align: center;
+}
+.texto-imagen{
+    text-align: center;
+    font-size: 30px;
+}
+.contenedor-multimedia {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: black;
 }
-
-nav a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: chocolate;
+.cobain {
+    text-align: center;
+    font-size: 50px;
 }
-
 .autor {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-variant: small-caps;
-    font-size: 9px;
+    font-size: 30px;
 }
-
 .autor-nacion {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-variant: small-caps;
-    font-size: 8px;
+    font-size: 25px;
 }
-
-.footer {
+.footer-css{
     display: flex;
     justify-content: space-around;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: chocolate;
-    background-color: black;
-    position: bottom;
 }
-
-.footer a {
-    color: chocolate;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.division {
-    text-align: left;
-    color: chocolate;
-    background-color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-body {
-    background-color: antiquewhite;
-}
-
-.header {
-    text-align: center;
-    color: chocolate;
-    background-color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: black;
-}
-
-nav a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: chocolate;
-}
-
-.contenedor-grid {
-    border: 1px solid aliceblue;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(3, 450px);
-    gap: 1px;
-    grid-template-areas:
-        "imagen-principal imagen-principal imagen-principal imagen-principal"
-        "review-strato review-strato foto-peppers foto-peppers"
-        "cobain cobain cobain cobain";
-}
-
-.imagen-principal {
-    grid-area: imagen-principal;
-    background-color: darkgray;
-}
-
-.foto-peppers {
-    grid-area: foto-peppers;
-}
-
-.review-strato {
-    grid-area: review-strato;
-}
-
-.cobain {
-    grid-area: cobain;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-variant: small-caps;
-    font-size: 15px;
-}
-
-.instrumentos {
-    background-color: burlywood;
+.footer-css a{
+    color: #000;
     text-decoration: none;
+    font-size: 25px;
+}
+/*edicion de estilo para "instrumentos"*/
+.card-link{
+    text-align: center;
+    color: black;
     display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    flex-direction: row;
-    color: chocolate;
-    margin-top: auto;
+    justify-content: center;
 }
-
-.contenedor-grid-instrumentos {
-    border: 1px solid white;
-    display: grid;
-    grid-template-columns: repeat(3, 55%);
-    grid-template-rows: repeat(3, 32%);
-    gap: 12px;
-    grid-template-areas:
-        "instrumento-uno instrumento-dos instrumento-cinco"
-        "instrumento-cuatro instrumento-seis instrumento-siete"
-        "instrumento-cuatro instrumento-tres instrumento-siete";
-}
-
-.instrumento-uno {
-    grid-area: instrumento-uno;
-    background-color: white;
-}
-
-.instrumento-dos {
-    grid-area: instrumento-dos;
-    background-color: white;
-}
-
-.instrumento-tres {
-    grid-area: instrumento-tres;
-    background-color: white;
-}
-
-.instrumento-cuatro {
-    grid-area: instrumento-cuatro;
-    background-color: white;
-}
-
-.instrumento-cinco {
-    grid-area: instrumento-cinco;
-    background-color: white;
-}
-
-.instrumento-seis {
-    grid-area: instrumento-seis;
-    background-color: white;
-}
-
-.instrumento-siete {
-    grid-area: instrumento-siete;
-    background-color: white;
-}
-
-p {
-    background-color: white;
-}
-
-@media screen and (max-width: 780px) {
-    .contenedor-grid-instrumentos {
-        border: 1px solid white;
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(4, 32%);
-        gap: 6px;
-        grid-template-areas:
-            "instrumento-uno instrumento-dos"
-            "instrumento-cuatro instrumento-cinco"
-            "instrumento-seis instrumento-siete"
-            "instrumento-tres";
-    }  }
-    .instrumento-uno {
-        grid-area: instrumento-uno;
-        background-color: white;
-    }
-    
-    .instrumento-dos {
-        grid-area: instrumento-dos;
-        background-color: white;
-    }
-    
-    .instrumento-tres {
-        grid-area: instrumento-tres;
-        background-color: white;
-    }
-    
-    .instrumento-cuatro {
-        grid-area: instrumento-cuatro;
-        background-color: white;
-    }
-    
-    .instrumento-cinco {
-        grid-area: instrumento-cinco;
-        background-color: white;
-    }
-    
-    .instrumento-seis {
-        grid-area: instrumento-seis;
-        background-color: white;
-    }
-    .instrumento-siete {
-        grid-area: instrumento-siete;
-        background-color: white;
-    }

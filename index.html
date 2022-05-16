@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Inicio</title>
 </head>
 
 <body>
-    <header class="header">
-        <h1>
+    <header class="contenedor header">
+        <h1 class="header-titulo">
             Music Deliver
         </h1>
-        <h2>Musica para volar</h2>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="./pages/instrumentos.html">Instrumentos</a>
@@ -24,34 +26,43 @@
         </nav>
     </header>
     <main>
-        <div class="contenedor-grid">
-            <div class="imagen-principal">
-                <img src="https://vanzguitars.files.wordpress.com/2022/03/image-79.png" alt="">
-            </div>
-            <div class="review-strato">
+        <section class="contenedor imagen-principal">
+            <h3 class="texto-imagen">
+                Productos de primera calidad para desarrollar tus habilidades musicales.
+            </h3>
+            
+                <div class="imagen-principal">
+                    <img src="https://vanzguitars.files.wordpress.com/2022/03/image-79.png" alt="">
+                </div>
+        </section>
+        <section class="contenedor-multimedia">
+            <div class="multimedia review">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/42KO7CQxAIk"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <div class="foto-peppers">
+            <div class="multimedia peppers">
                 <img src="https://sss.radiooasis.pe/imagen/apaisado/concierto-de-red-hot-chili-peppers-en-la-gran-piramide-de-guiza-sera-transmitido-en-directo-d4d82.jpg "
                     alt="">
             </div>
-            <div class="cobain">
+        </section>
+        <section class="contenedor cobain">
+            <div>
                 <p>
                     "La musica es sinonimo de libertad, de tocar lo que quieras y como quieras, siempre que
                     sea bueno y tenga pasion, que la musica sea el alimento del amor."
-                <h4 class="autor">-Kurt D. Cobain(1967-1994)-</h4>
-                <h5 class="autor-nacion">Musico Estadounidense.</h5>
+                <h2 class="autor">-Kurt D. Cobain(1967-1994)-</h2>
+                <h3 class="autor-nacion">Musico Estadounidense.</h3>
                 </p>
             </div>
-        </div>
     </main>
-    <footer class="footer">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
+    <footer class="contenedor footer">
+        <div class="footer-css">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
     </footer>
 
 
