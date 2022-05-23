@@ -117,4 +117,35 @@ nav>a:hover {
 .cards:hover .cards-content{
     opacity: 1;
 }
+@media (max-with: 500px){
+    .header{
+        flex-direction: column;
+    }
+    .header-nav{
+        flex-direction: column;
+    }
+    .contenedor-multimedia{
+        max-width: 450px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .texto-imagen{
+        font-size: 20px;
+    }
+    .imagen-principal{
+        width: 450px;
+        max-width: 450px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .contenedor{
+        flex-direction: column;
+    }
+    .contenedor-multimedia{
+        flex-direction: column;
+    }
+    .cards-container{
+        flex-wrap: wrap;
+    }
+}
 
